@@ -43,7 +43,7 @@ public class BaseTest {
 		jse = (JavascriptExecutor) driver;
 	}
 	
-	@AfterMethod(alwaysRun = true)
+	//@AfterMethod(alwaysRun = true)
 	public void tearDown() throws InterruptedException  {
 		Thread.sleep(5000);//bad practice
 		driver.quit();
