@@ -145,6 +145,9 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;appUrl&quot; value=&quot;https://keyfood.ro&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;selenium.utils.TestNgListner&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.HomeWorkSearch&quot;/&gt;
@@ -191,7 +194,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchWhileLogged')
 data.setCell(0, 2, 'tests.HomeWorkSearch')
-data.setCell(0, 3, 89505);
+data.setCell(0, 3, 95031);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
@@ -229,15 +232,15 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">searchWhileLogged</span>
-                <span class="method-start">5056 ms</span>
+                <span class="method-start">4554 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">recordFailure([TestResult name=searchWhileLogged status=SUCCESS method=HomeWorkSearch.searchWhileLogged()[pri:1, i...)</span>
-                <span class="method-start">94565 ms</span>
+                <span class="method-start">99590 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">94571 ms</span>
+                <span class="method-start">99597 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
